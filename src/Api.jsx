@@ -3,19 +3,20 @@ import React, { useState, useEffect } from "react";
 const Api = () => {
 
   const [getname, setGetname] = useState({
-    name: "",
-    email: "",
-    address: "",
-    company: "",
+    id: "",
+    title: "",
+    thumbnail: "",
+    category: "",
+    description: "",
   })
-  const { name, email, address, company } = getname;
+  const { id, title, thumbnail, category, description } = getname;
 
   useEffect(() => { 
-    fetch("https://jsonplaceholder.typicode.com/users/1")
+    fetch("https://dummyjson.com/products/1")
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
-      setGetname({name: data.name, email: data.email, address: data.address.zipcode, company: data.company.name})
+      console.log(data);
+      setGetname({id: data.id, title: data.title, thumbnail: data.thumbnail, category: data.category, description: data.description})
     })
     .catch((err) => console.log(err));
   }, []);
@@ -24,10 +25,11 @@ const Api = () => {
 
   return (
     <div>
-      <h3>Name: {name}</h3>
-      <h3>Email: {email}</h3>
-      <h3>Address: {address}</h3>
-      <h3>Company: {company}</h3>
+      <h3>id: {id}</h3>
+      <h3>title: {title}</h3>
+      <img src={thumbnail}></img>
+      <h3>category: {category}</h3>
+      <h3>description: {description}</h3>
       
       
       

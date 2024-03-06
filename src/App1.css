@@ -1,0 +1,111 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border-radius: box-sizing;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 1rem;
+  background-color: #f2f3f4;
+  margin: auto;
+  gap: .6rem;
+}
+
+.task {
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: 'center';
+  padding: .2rem;
+  gap: .5rem;
+}
+
+input {
+  border: 2px solid #333;
+  width: 60%;
+  height: 60%;
+  border-radius: .3rem;
+  margin: auto;
+  color: black;
+  background-color: rgb(240, 220, 224);
+  /* font-size: 1.0rem; */
+  /* line-height: 0.5; */
+}
+
+.btn {
+  height: 60%;
+  width: 18%;
+  color: #333;
+  background-color: crimson;
+  border: 2px solid #333;
+  border-radius: .3rem;
+  margin: auto;
+  font-size: .8rem;
+}
+
+.tasks {
+  height: 60%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: .3rem;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.todo {
+  height: 3rem;
+  width: 90%;
+  background-color: #f2f3f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: .3rem;
+  color: #333;
+  font-family: cursive;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  margin: .2rem;
+  margin-left: 1px;
+}
+
+.btn:hover {
+  border-color: #646cff;
+}
+
+.delete {
+  width: 10%;
+  height: 1.5rem;
+  color: #333;
+  background-color: crimson;
+  border: 2px solid #333;
+  border-radius: .3rem;
+  font-size: .8rem;
+  padding: .1em;
+}
+
+.error {
+  color: red;
+width: 70%;
+background-color: white;
+}
